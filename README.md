@@ -2,63 +2,88 @@
 Quakespace revolutionises the mapping of moonquakes with an immersive view of the map itself. From ring mapping to height maps, this project has it all.
 
 ## About
-Originally created for the NASA Space Apps Hackathon held in 2023.
+Originally created for the NASA Space Apps Hackathon held in 2024.
 
 For more info, visit the team page:
-https://www.spaceappschallenge.org/2023/find-a-team/quakespace/
+https://www.spaceappschallenge.org/nasa-space-apps-2024/find-a-team/orbitspace/
 
-Try out the map:
-https://quakespace.co
+Try out the orrery:
+https://orbitspace.ampiere.co
 
 ## High-Level Summary
-QuakeSpace is an innovative platform dedicated to unraveling the mysteries of the moon's seismic history. QuakeSpace meticulously deciphers decades old lunar seismic data, breathing new life into the moon’s ancient whispers. Understanding the moon's seismic history is vital for lunar exploration, scientific research, and potential future missions. QuakeSpace facilitates this by providing crucial insights and data.
+We developed an interactive orrery web app that visualizes celestial bodies, including planets, Near-Earth Objects, and Potentially Hazardous Asteroids. Our app provides real-time data on orbital characteristics, rise and set times, and visibility, adjusted for the user’s location. Users can explore the solar system at both exaggerated and true scales, with detailed information for each body, including links to educational resources. By combining accurate data with an intuitive interface, the app enhances public understanding of astronomy, making space exploration accessible and engaging for all.
 
 ## What exactly does it do?
-QuakeSpace serves as a comprehensive lunar exploration platform. It offers immersive 3D visualised experiences, AI-powered guidance, and access to a vast repository of Apollo mission data. This combination allows users to delve into the moon's seismic history, gaining deeper insights and understanding.
+Our interactive orrery web app provides a 3D model of the solar system, allowing users to explore celestial bodies like planets, Near-Earth Asteroids, Comets, and Potentially Hazardous Asteroids. It offers real-time data, including orbital characteristics, rise and set times, and horizon coordinates (altitude/azimuth), tailored to the user's location. The app also includes background stars and links to educational resources like Wikipedia for deeper learning.
 
 ## How does it work?
-QuakeSpace operates by integrating several key components:
+OrbitSpace operates by integrating several key components:
 
-- Data Repository: It maintains a comprehensive repository of data, including lunarquake records and historical information gathered from NASA's Apollo missions.
-- AI Companion: An intelligent AI companion is available to assist users. It can answer questions, provide insights, and guide users through their lunar exploration journey.
-- User Interface: QuakeSpace offers an intuitive user interface that allows users to access and interact with the data and features seamlessly.
-- Immersive Elements: QuakeSpace incorporates VR or other immersive technologies to enhance the user's experience, allowing them to visualize lunar data in a more engaging way.
+- Users can zoom in and out, switching between an exaggerated solar system view and a true-scale planetary system view.
+- Celestial bodies larger than 1 km in radius are searchable and provide real-time data.
+- The app retrieves live ephemerides and astronomical data through APIs, while users can adjust variables like location (latitude/longitude), time, and particle count for performance.
 
-Overall, QuakeSpace combines the power of data, AI assistance, and immersive technologies to provide users with a rich and educational lunar exploration experience.
+Overall, OrbitSpace combines the power of data, AI assistance, and immersive technologies to provide users with a rich and educational solar system exploration experience.
 
-![moonquake](https://github.com/heyzaib/quakespace/assets/95955709/7328e3a6-f214-44f0-932c-d07ba309ad28)
+![orrery](https://assets.spaceappschallenge.org/media/images/Screenshot_2024-10-05_140537.width-1024.png)
 
 ## What benefits does it have?
-QuakeSpace offers several benefits:
+OrrerySpace offers several benefits:
 
-- Educational Value: It provides a valuable resource for students, researchers, and space enthusiasts to learn about lunar history and seismic activity.
-- Scientific Insights: QuakeSpace aids scientists in analyzing lunarquake data, contributing to a deeper understanding of the moon's geology.
-- Historical Perspective: Users can explore historical records from Apollo missions, preserving and sharing the legacy of lunar exploration.
-- Enhanced Engagement: The platform engages users through immersive experiences and AI guidance, making lunar exploration more accessible and captivating.
-- Potential Future Missions: Insights gained from QuakeSpace can inform future lunar missions and resource exploration efforts.
+- Educational: The app offers detailed astronomical insights, making complex data easily understandable for students, educators, and enthusiasts.
+- Interactive Exploration: Real-time tracking of celestial bodies and dynamic zoom features bring the solar system to life, enhancing engagement.
+- Accessibility: The app provides both live data and links to external resources, merging interactive learning with research capabilities.
 
-![llinechart](https://github.com/heyzaib/quakespace/assets/95955709/d079d143-bb5e-4dd9-bb9a-243615c66a26)
+![image](https://github.com/user-attachments/assets/7fe46254-3217-46b6-9cb9-d9829a3a07ac)
+
 
 ## What do you hope to achieve?
-- Advancing Lunar Knowledge: To deepen our understanding of the moon's seismic history and geological processes.
-- Education and Outreach: To engage and educate people about lunar science, space exploration, and the significance of lunarquakes.
-- Scientific Contribution: To provide valuable data and insights that can aid scientists in their lunar research and discoveries.
-- Innovation in Technology: To push the boundaries of immersive technology like virtual reality and AI to make lunar exploration more accessible and exciting.
-- Preservation of History: To preserve and share the historical records and achievements of the Apollo missions for future generations.
-
-![VR](https://github.com/heyzaib/quakespace/assets/95955709/d1ced5e8-6a8d-4474-b55c-b2521e0d0696)
+We aim to create an accessible and educational tool that makes space exploration engaging for users of all backgrounds. By providing real-time data and interactive features, we hope to inspire curiosity about astronomy, raise awareness of potentially hazardous asteroids, and encourage learning about the solar system in a fun, dynamic way. Ultimately, we want to bridge the gap between complex astronomical data and user-friendly experiences, fostering a greater appreciation for space science.
 
 ## What tools, coding languages, hardware, or software did you use to develop your project?
 We have used a variety of tools in order to cater up a highly-immersive experience. The list of programmes are as follows:
-Javascript, React.js, Typescript, Python, Next.js, Flask, Pycharm, Godot, Blender, Microsoft Azure, GoDaddy.
+
+1. HTML:
+
+HTML provides the foundational structure of OrbitSpace, organizing content and ensuring that all elements, such as headers, buttons, and data displays, are properly defined and accessible. This semantic structure enhances usability
+
+2. CSS:
+
+CSS is utilized to style the application, creating a visually appealing and responsive interface. It allows us to define layouts, color schemes, and typography, ensuring a seamless user experience across devices. CSS animations further enhance interactivity, making transitions smooth and engaging.
+
+3. jQuery:
+
+jQuery simplifies DOM manipulation and event handling, enabling us to create dynamic interactions without extensive coding. It allows for easy implementation of features like click events, animations, and AJAX calls, enhancing user engagement by providing real-time updates and smooth interactions.
+
+4. JavaScript:
+
+JavaScript serves as the backbone of OrbitSpace, powering all interactive features and app logic. It enables real-time data fetching from NASA APIs, manages user input, and controls the 3D rendering of celestial bodies. 
+
+# Tools Used:
+- GitHub
+- Webstorm
+- Visual Studio Code
+- Microsoft Office
+- Mozilla Developer Tools
+- Adobe Illustrator
+- Claude 3.5 Sonnet
+
+# Use of Artificial Intelligence
+- Visualization Optimization: AI is employed to optimize 3D visualizations, ensuring smooth rendering and efficient performance, even when displaying complex orbital mechanics.
+- Creative Content with Claude 3.0: We utilized Claude 3.0 to enrich our app’s educational material and providing users with a unique artistic experience that complements their exploration of the cosmos.
+- Code Assistance with GitHub Copilot: We utilized GitHub Copilot to streamline the development process, leveraging AI-powered code suggestions to enhance coding efficiency, reduce errors, and accelerate feature implementation in OrbitSpace.
 
 # Space Agency Data
-- Topographic Map of the Moon - NASA
-- Seismic Information - NASA
-- NASA CGI Moon Kit
-- Seismic Event - Catalog
+- https://ssd.jpl.nasa.gov/planets/approx_pos.html
+- https://ssd.jpl.nasa.gov/tools/sbdb_query
+- https://github.com/nasa/mission-viz
+- https://nasa.github.io/mission-viz/RMarkdown/ontology_based_orrery_generated_from_R_code.html
+- https://eyes.nasa.gov/apps/asteroids/#/home
 
 # Reference
-Globe.gl React library
+- https://api.jquery.com/
+- https://science.nasa.gov/solar-system/
+- https://www.javascript.com/
+- https://web.dev/learn/css
 
 
