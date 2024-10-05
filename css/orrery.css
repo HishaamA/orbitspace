@@ -1,0 +1,272 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap');
+
+/*new container style */
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+/* Existing styles */
+@font-face {
+    font-family: 'barlowregular';
+    src: url('../fonts/Barlow-Regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Instrument Sans';
+    src: url('../fonts/Barlow-Bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'barlowlight';
+    src: url('../fonts/Barlow-Light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'barlowsemicondensed_light';
+    src: url('../fonts/barlowsemicondensed-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, body {
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+    background-color: #f0f0f0;
+    font-family: 'barlowregular', Tahoma, Geneva, Verdana, sans-serif;
+    color: #99a7c7;
+}
+
+canvas {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #007BFF;
+    border: 0;
+}
+
+.label, .gratLabel { 
+    position: absolute;
+    font-family: 'barlowregular', Tahoma, Geneva, Verdana, sans-serif;
+    z-index: 2;
+    font-size: 14px;
+    top: -999px;
+    left: -999px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+a:hover, .label:hover {
+    color: #4b0f9e;
+}
+
+.tag0 {
+    color: #6dc9e1;
+}
+
+.tag1, .tag2, .tag3, .tag4 {
+    color: #ffe500;
+}
+
+.gratLabel {
+    color: #2cab4544;
+}
+
+.active {
+    color: #d3eda4;
+    font-family: 'Instrument Sans', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#autocomplete, #manualLat, #manualLon, #manualYear, #manualDay, #manualTime {
+    position: relative;
+    font-family: 'barlowregular', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #d5dde2;
+    color: #5b758d;
+    font-size: 16px;
+    z-index: 5;
+    border: 1px solid #256fcf;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+#autocomplete { 
+    width: 233px;
+}
+
+#manualLat, #manualLon, #manualYear, #manualDay, #manualTime {
+    width: 50px;
+}
+
+#inputBox { 
+    position: relative;
+    width: 270px;
+    font-family: 'barlowregular', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(255, 255, 255);
+    font-size: 0.8em;
+    z-index: 4;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+#date {
+    color: #e9f5dd;
+    font-size: 1.33em;
+    font-family: "Instrument Sans";
+}
+
+#info {
+    margin-top: 21px;
+}
+
+.obscured {
+    color: #99a;
+}
+
+#infohead {
+    font-family: 'Californian FB';
+    font-size: 2.5em;
+    line-height: 0.8em;
+}
+
+fieldset {
+    border: #ccc solid 1px;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+legend {
+    color: #777;
+}
+
+#moonBox, #asteroidBox, #cometBox {
+    padding: 0;
+}
+
+#VRButton {
+    padding: 0;
+    height: initial;
+}
+
+.wikipic {
+    width: 226px;
+    height: auto;
+    margin-top: 5px;
+}
+
+button {
+    padding: 0;
+    width: 2em;
+    height: 2em;
+    background-color: #ffffff;
+    border: none;
+    color: #d63737;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:active {
+    background-color: #003f7f;
+}
+
+button img {
+    width: 100%;
+    height: auto;
+}
+
+#speedfield {
+    width: 120px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#splashScreen {
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    left: 25%;
+    top: 25%;
+    z-index: 10;
+    background-color: rgba(0, 0, 34, 0.8);
+    text-align: center;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+/* #splashScreen p {
+    color: #aaa;
+    font-family: 'barlowregular', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#logo {
+    width: 30%;
+    margin-top: 3%;
+    opacity: 0.6;
+}
+
+#clearSplash, #openSplash {
+    width: 50px;
+    text-align: center;
+    color: #aaa;
+    font-family: 'barlowregular', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#clearSplash {
+    visibility: hidden;
+} */
+
+.ui-widget {
+    font-family: 'barlowregular', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.ui-widget-content {
+    background-image: none;
+}
+
+.ui-accordion .ui-accordion-header {
+    font-size: 1.2em;
+    padding: 0.2em 0.2em 0.1em 0.2em;
+}
+
+.ui-accordion .ui-accordion-content {
+    padding: 1em;
+}
+
+.ui-menu-item {
+    font-size: 0.8em;
+}
+
+.ui-tooltip {
+    background-color: #333;
+}
+
+.ui-tooltip-content {
+    color: #aaa;
+    font-family: 'barlowregular', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.ui-helper-reset {
+    line-height: 1em;
+}
